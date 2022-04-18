@@ -13,6 +13,15 @@ $(function(){
     slidesToScroll: 4
   });
 
+  $(".price_search").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 1000,
+    from: 0,
+    to: 600,
+    prefix: "$"
+  });
+
   var mixer = mixitup('.products__inner-box');
 
 });
